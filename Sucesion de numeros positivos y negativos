@@ -1,0 +1,22 @@
+
+// Sucesion de numeros positivos y negativos
+
+#include<stdio.h>
+
+int main(){
+int n; 
+
+	printf("Ingrese que \033[32mnumero\033[0m quiere que llegue la sucesion de numeros \n\n");
+	scanf("%d",&n);
+	
+	if (n>=0) {
+	for (int a=1; a<=n; ++a){
+	printf("%d,-%d,", a, a);
+	}
+}
+printf("\n Aqui esta tu sucesion de \033[32mnumeros\033[0m");
+		
+		printf("\n");
+	
+	return 0;
+}
