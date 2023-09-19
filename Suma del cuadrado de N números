@@ -1,0 +1,23 @@
+// Suma del cuadrado de N números
+
+#include <stdio.h>
+
+int main() {
+    int suma = 0;
+    int Si;
+
+    printf("Quieres que se haga una suma de todos los cuadrados de los primeros 100 \033[32mnumero\033[0m enteros?\n");
+    printf("Escribe Si para continuar\n\n");
+    scanf("%d", &Si);
+
+    if (Si) {
+        for (int n = 1; n <= 5; n++) {
+            suma += n * n;
+        }
+        printf("La suma de los cuadrados de los primeros 100 \033[32mnumeros\033[0m enteros es: %d\n", suma);
+    } else {
+        printf("No se realizo la suma.\n");
+    }
+
+    return 0;
+}
